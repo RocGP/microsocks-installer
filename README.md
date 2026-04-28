@@ -31,7 +31,7 @@ bash <(curl -sSL https://raw.githubusercontent.com/RocGP/microsocks-installer/ma
 
 安装完成后，可以在本地电脑的终端运行以下命令，测试代理是否通畅：
 ``
-curl --socks5-hostname 用户名:密码@你的服务器IP:端口 [https://www.google.com](https://www.google.com) -v
+curl --socks5-hostname 用户名:密码@服务器IP:端口 https://www.google.com -v
 ``
 
 📖 进阶指南
