@@ -30,36 +30,36 @@ bash <(curl -sSL https://raw.githubusercontent.com/RocGP/microsocks-installer/ma
 🛠️ 连通性测试
 
 安装完成后，可以在本地电脑的终端运行以下命令，测试代理是否通畅：
-
+``
 curl --socks5-hostname 用户名:密码@你的服务器IP:端口 [https://www.google.com](https://www.google.com) -v
-
+``
 
 📖 进阶指南
 
 1. 修改账号密码
 
 MicroSOCKS 的配置直接作为参数传递给 Systemd。如需修改，请编辑服务文件：
-
+``
 sudo nano /etc/systemd/system/microsocks.service
-
+``
 
 修改 ExecStart= 这一行中的 -u (用户名) 和 -P (密码) 参数。修改后重启服务即可生效：
-
+``
 sudo systemctl daemon-reload
 sudo systemctl restart microsocks
-
+``
 
 2. 检查运行状态
-
+``
 systemctl status microsocks
-
+``
 
 3. 一键彻底卸载
 
 如果你不想用了，可以通过以下命令将其从系统中彻底清除：
-
+``
 apt-get purge -y microsocks && rm -f /etc/systemd/system/microsocks.service && systemctl daemon-reload
-
+``
 
 ⚠️ 注意事项
 
