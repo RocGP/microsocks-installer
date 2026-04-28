@@ -23,14 +23,9 @@ MicroSOCKS One-Click Installer
 (注意：发布前请将命令中的 你的用户名 和 你的仓库名 替换为你真实的 GitHub 路径)
 
 使用 curl (推荐):
-
-bash <(curl -sSL [https://raw.githubusercontent.com/你的用户名/你的仓库名/main/install.sh](https://raw.githubusercontent.com/你的用户名/你的仓库名/main/install.sh))
-
-
-或者使用 wget:
-
-wget -O- [https://raw.githubusercontent.com/你的用户名/你的仓库名/main/install.sh](https://raw.githubusercontent.com/你的用户名/你的仓库名/main/install.sh) | bash
-
+``
+bash <(curl -sSL https://raw.githubusercontent.com/RocGP/microsocks-installer/main/install.sh)
+``
 
 🛠️ 连通性测试
 
